@@ -1,1 +1,120 @@
-Hello World
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Sample Flex Box</title>
+    <style>
+        .logo-nav {
+            display: flex;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+			align-items: start;
+			align-content: center;
+            justify-content: space-evenly;
+            }
+
+        .flex-item {
+            height: 100px;
+            width: 1820px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            }
+        div {
+            text-align: center;
+            font-size: 20px;
+            }
+        h3 {text-align: center;}
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            }
+        .previous-projects {
+            display: flex;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            }
+        .proj {
+            height: 100px;
+            width: 1820px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            }
+            		
+        .flex-container {
+            display: flex;
+			height: 300px; 
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+			flex-direction: row; 
+			/* justify-content: flex-end; */
+			/* flex-wrap: wrap; */
+			align-items: start;
+			align-content: center;
+            justify-content: space-evenly;
+        }
+
+        .flex-item {
+			height: 100px;
+			width: 300px;
+			margin: 10px;
+			border-style: solid;
+            border-width: 2px;
+            border-color: black;
+        }
+        .skills-auto{
+			height: 100px;
+			width: 500px;
+			margin: 10px;
+			border-style: solid;
+            border-width: 2px;
+            border-color: black;
+        }
+		
+        </style>
+</head>
+<body>
+    <div class="h3">
+        <div class="logo-nav">Logo and Navigation Bar</div>
+    </div
+    <div class>
+        <h3>Featured Photo</h3>
+        <img src="https://www.uopeople.edu/wp-content/uploads/2019/01/The-Basics-of-Computer-Science.webp" alt="Trulli" width="500" height="400" class="center">
+    </div>
+    <!-- <div class+"proj">
+        <div class="previous-projects">Project 1</div>
+        <div class="previous-projects">Project 2</div>
+        <div class="previous-projects">Project 3</div>
+        <div class="previous-projects">Project 4</div>
+    </div> -->
+    <div class="flex-container">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+	</div>
+    <div class="flex-container">
+		<div class="skills-auto">1</div>
+		<div class="skills-auto">2</div>
+
+	</div>
+    <!-- <h1>This is a heading</h1>
+    <p>This is the first paragraph of text</p>
+    <hr />
+    <p>This is the second paragraph of text</p> -->
+  </body>
+
+</html> 
+
