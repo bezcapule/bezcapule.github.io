@@ -1,120 +1,78 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <title>Sample Flex Box</title>
-    <style>
-        .logo-nav {
-            display: flex;
-            border-style: solid;
-            border-width: 2px;
-            border-color: black;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-			align-items: start;
-			align-content: center;
-            justify-content: space-evenly;
-            }
-
-        .flex-item {
-            height: 100px;
-            width: 1820px;
-            border-style: solid;
-            border-width: 2px;
-            border-color: black;
-            }
-        div {
-            text-align: center;
-            font-size: 20px;
-            }
-        h3 {text-align: center;}
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            }
-        .previous-projects {
-            display: flex;
-            border-style: solid;
-            border-width: 2px;
-            border-color: black;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            }
-        .proj {
-            height: 100px;
-            width: 1820px;
-            border-style: solid;
-            border-width: 2px;
-            border-color: black;
-            }
-            		
-        .flex-container {
-            display: flex;
-			height: 300px; 
-            border-style: solid;
-            border-width: 5px;
-            border-color: black;
-			flex-direction: row; 
-			/* justify-content: flex-end; */
-			/* flex-wrap: wrap; */
-			align-items: start;
-			align-content: center;
-            justify-content: space-evenly;
-        }
-
-        .flex-item {
-			height: 100px;
-			width: 300px;
-			margin: 10px;
-			border-style: solid;
-            border-width: 2px;
-            border-color: black;
-        }
-        .skills-auto{
-			height: 100px;
-			width: 500px;
-			margin: 10px;
-			border-style: solid;
-            border-width: 2px;
-            border-color: black;
-        }
-		
-        </style>
-</head>
+    <!-- <body style="background-color:#F05941;"></body> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
 <body>
-    <div class="h3">
-        <div class="logo-nav">Logo and Navigation Bar</div>
-    </div
-    <div class>
-        <h3>Featured Photo</h3>
-        <img src="https://www.uopeople.edu/wp-content/uploads/2019/01/The-Basics-of-Computer-Science.webp" alt="Trulli" width="500" height="400" class="center">
+
+    <header class="header">
+        <a href="#" class="logo">&#9829;</a>
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#" class="">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a> 
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>BEA CAPULE.</h1>
+            <h3> Frontend Software Engineer</h3>
+            <p> My name is Beatrice Elaine Z. Capule, a graduating Computer
+                Science student applying for a Frontend Software Engineer position.
+                I am still working on my skills related to management and web programming but
+                I know I can learn and improve these skills at Gugil Co.
+            </p>
+        </div>
+
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+        </div>
+
+        <div class="picture">
+            <img src="me.png" alt="Bea Capule" style="width:500px;height: 700px;">
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="skills">
+            <h1>ACQUIRED SKILLS</h1>
+        </div>
+        <div class="logos">
+            <img src="logo.png" alt="Skills" class="center" style="width:800px;height: 500px;">
+            <img src="python.png" alt="Skills" class="center" style="width:200px;height: 200px;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+    
+
+<div class="row">
+  <div class="column">
+        <h3>MANAGEMENT SKILLS</h3>
+        <br>
+        <p>Planning</p>
+        <p>Communication</p>
+        <p>Decision-making</p>
+        <p>Delegation</p>
+        <p>Problem-solving</p>
+        <p>Motivating</p>
+  </div>
+  <div class="column">
+        <h3>PROJECT</h3>
+        <div class="column2">
+        <p>Tidy Teens is a game that involves a student trying to clean their room by clearing obstacles such as their clothes, books, or other items by placing their multi-directional soap bombs that can damage obstacles and other entities. Successfully clearing items can merit points for the player. They must successfully clear all items while avoiding entities such as mice and bugs, which can damage the player and make the player lose health. The player can also obtain power ups that can increase their clearing time or the range of their clearing. Once the player has successfully cleared all items, they may now exit the room to clear the game. </p>
+        </div>
     </div>
-    <!-- <div class+"proj">
-        <div class="previous-projects">Project 1</div>
-        <div class="previous-projects">Project 2</div>
-        <div class="previous-projects">Project 3</div>
-        <div class="previous-projects">Project 4</div>
-    </div> -->
-    <div class="flex-container">
-		<div class="flex-item">1</div>
-		<div class="flex-item">2</div>
-		<div class="flex-item">3</div>
-		<div class="flex-item">4</div>
-	</div>
-    <div class="flex-container">
-		<div class="skills-auto">1</div>
-		<div class="skills-auto">2</div>
-
-	</div>
-    <!-- <h1>This is a heading</h1>
-    <p>This is the first paragraph of text</p>
-    <hr />
-    <p>This is the second paragraph of text</p> -->
-  </body>
-
+</div>
+    </section>
+</body>
 </html> 
-
